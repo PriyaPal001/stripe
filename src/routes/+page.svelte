@@ -4,7 +4,7 @@ import ProductCard from "$lib/productCard.svelte";
 import { cartItems } from "$lib";
 
     let checkout=async()=>{
-        await fetch( 'api/stipe-Checkout' ,{
+        await fetch( 'api/stripeCheckout' ,{
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
